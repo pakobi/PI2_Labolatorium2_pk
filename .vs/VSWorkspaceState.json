@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\module",
+    "\\module\\Dropbox",
+    "\\module\\Dropbox\\config",
+    "\\module\\Dropbox\\src",
+    "\\module\\Dropbox\\src\\Controller",
+    "\\module\\Dropbox\\src\\Service"
+  ],
+  "SelectedNode": "\\module\\Dropbox\\config\\module.config.php",
+  "PreviewInSolutionExplorer": false
+}

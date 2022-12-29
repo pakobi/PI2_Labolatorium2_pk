@@ -1,0 +1,30 @@
+<h1>Filmy</h1>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Tytuł</th>
+        <th>Rok</th>
+        <th>Ocena</th>
+        <th>Gatunek</th>
+        <th>Link</th>
+    </tr>
+    </thead>
+    <tbody>
+    <?php foreach ($this->movies as $movie): ?>
+        <tr>
+            <td><?= $movie['id'] ?></td>
+            <td><?= $movie['title'] ?></td>
+            <td><?= $movie['year'] ?></td>
+            <td><?= $movie['rating'] ?></td>
+            <td><?= $movie['genre_id'] ?></td>
+            <td><a href="<?= $movie['link'] ?>" target="_blank"><?= $movie['link'] ?></a></td>
+            <td>
+                <a href="<?= $this->url('soap-client/default', ['action' => 'edit', 'id' => $movie["id"]])?>" title="edytuj rekord">EDIT</a> 
+                <a href="<?= $this->url('soap-client/default', ['action' => 'usun', 'id' => $movie["id"]])?>" title="usuń rekord">DELETE</a>
+            </td>
+        </tr>
+    <?php endforeach; ?>
+    </tbody>
+</table>

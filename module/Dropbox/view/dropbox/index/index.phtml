@@ -1,0 +1,32 @@
+<h1>Lista plików</h1>
+
+    <?php if (!empty($this->msg)): ?>
+        <div class="alert alert-danger">
+            <?= $this->msg ?>
+        </div>
+    <?php else: ?>
+        <?php if (empty($this->files)): ?>
+            <p>Brak plików.</p>
+        <?php else: ?>
+            <table style="width:50%"> 
+            <tr>
+                <th>Nazwa Pliku</th>
+                <th>Lista Operacji</th>
+            </tr>
+                <?php foreach ($this->files as $indeks => $file): ?>
+                <tr>
+                    <td>
+                        <a href="<?= $this->url('dropbox/default', ['action' => 'download'], ['query' => ['path' => $file['path_lower']]]) ?>">
+                            <?= $file['name'] ?>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="<?= $this->url('dropbox/default', ['action' => 'edit'], ['query' => ['path' => $file['path_lower'],'name' => $file['name']]]) ?>" title="EDYTUJ">EDYTUJ</a>
+                        <a href="<?= $this->url('dropbox/default', ['action' => 'delete'], ['query' => ['path' => $file['path_lower']]]) ?>" title="USUŃ">USUŃ</a>  
+                        <a href="<?= $this->url('dropbox/default', ['action' => 'download'], ['query' => ['path' => $file['path_lower']]]) ?>" title="POBIERZ">POBIERZ</a> 
+                    </td>
+                </tr>
+                <?php endforeach; ?>
+                </table>
+        <?php endif; ?>
+    <?php endif; ?>
