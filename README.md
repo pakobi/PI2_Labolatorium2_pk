@@ -10,9 +10,9 @@ It is realization of PI2 Labolatorium 2 which covers two following topics
 /================================================/
 1. Creation and usage of SOAP API under Laminas
 
-    Zadania:
-        1. Dodanie możliwość edytowania filmów przez API
-        2. Dodanie możliwość usuwania filmów przez API
+    Zadania
+        1. Dodanie możliwości edytowania filmów przez API
+        2. Dodanie możliwości usuwania filmów przez API
 
 /================================================/  
 2. Workshops - usage of Dropbox service
