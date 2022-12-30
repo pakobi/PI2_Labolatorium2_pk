@@ -9,13 +9,15 @@ looking to get their feet wet with Laminas MVC.
 It is realization of PI2 Labolatorium 2 which covers two following topics
 /================================================/
 1. Creation and usage of SOAP API under Laminas
-Zadania
-    1. Dodanie możliwość edytowania filmów przez API
-    2. Dodanie możliwość usuwania filmów przez API
+
+    Zadania
+        1. Dodanie możliwość edytowania filmów przez API
+        2. Dodanie możliwość usuwania filmów przez API
 
 /================================================/  
 2. Workshops - usage of Dropbox service
 
+    Zadania
     1. Zaimplementowanie możliwości dodawania plików tekstowych
         a. Formularz dodawania powinien mieć pola:
             i. Nazwa pliku (pole tekstowe)
